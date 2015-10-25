@@ -1,4 +1,3 @@
-
 function load() {
     $(document).ready(function() {
         $('#overlay1').fadeIn(2000);
@@ -6,6 +5,15 @@ function load() {
         window.onresize = resizing;
     });
 
+    $(document).scroll(function() {
+        var y = $(this).scrollTop();
+        if (y >= $('#banner').height()) {
+            $('#header').fadeIn();
+        } else {
+            $('#header').fadeOut();
+        }
+    });
+    
     //Section One Animation
     $(document).scroll(function() {
         var y = $(this).scrollTop() + 100;
