@@ -22,13 +22,6 @@ section {
 }
 
 #banner {
-	background-image: url(images/banner4_comp.jpg);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: -10%;
     position: relative;
     color: white;
     z-index: 0;
@@ -595,13 +588,13 @@ input[type="text"]:focus {
 }
 
 #iphone2 {
-    margin-top: 5%;
+    margin-top: -10%;
 	height: 80%;
 	float: right;
     position: relative;
     background:url(Assets/AW_Phone.png) no-repeat center center;
     display: block;
-    background-size: 229px 470px;
+    background-size: 234px 440px;
     right: 5%;
     width: 29%;
 }
