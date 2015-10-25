@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EnvoyNow</title>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+        <meta charset="utf-8" />
+        <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+        <link rel="stylesheet" href="style.css"/>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+        <script type="text/javascript" src="jquery.searchabledropdown-1.0.8.min.js"></script>
+        <link rel="shortcut icon" href="images/favicon.ico"/>
+        <script type="text/javascript" src="envoy_script.js"></script>
+   
+    </head>
+    <body onload='load()'>
+        <!--Header-->
+        <div id='header'><img id='logo' src="envoy_logo.png"><p id='logo_text'>EnvoyNow</p><a id='apple_badge'                                 href='https://itunes.apple.com/us/app/envoynow/id911115594?mt=8'><img src='images/Download_on_the_App_Store_Badge_US-UK_135x40.svg'></a></div>
+        
+        <!--Congrats-->
+        <div id='congrats_banner'>
+            <div id='congrats_content' onclick="remove_congrats()">
+                <!--
+                <div id="congrats_picture">
+                    <img src="images/hand_option2.png" alt="EnvoyNow" id="hand">
+                </div>-->
+                <div id="congrats_text">
+                    <h3 style="color: gray;" id='thankyou'>Thank you for signing up!</h3>
+                    <h2 id='unlock_school' style="color: #ed9107; font-weight: bold;">INVITE FRIENDS &amp;<br> UNLOCK ENVOYNOW</h2>
+                    <p style="color: gray">Share your progress via email, Facebook, or Twitter to invite more people<br>to unlock                         EnvoyNow! You're only a click away.</p>
+                    <div id="links">
+                        <a href='https://www.facebook.com/'><img src="images/facebook.png" alt="Facebook" id='facebook'></a>
+                        <div id="bar"></div>
+                        <a href='https://twitter.com/'><img src="images/tweetiebird.png" alt="Twitter" id="twitter"></a>
+                    </div>
+                    <h1 id='rating'>23%</h1>
+                    <div id="progressbar">
+                        <div id='percents'></div>
+                    </div>
+                    <h4 style="color: gray" id='please_verify'>Please verify your email to help bring EnvoyNow to your school!</h4>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Banner -->
+            <section id="banner">
+                <div id='overlay1'>
+                    <div id='banner_text'>
+                        <h3>Bring EnvoyNow to your school.</h3>
+                        <h6 style='margin-top: 100px'>Sorry, we're down for maintenence! Come back soon to unlock EnvoyNow for your school!</h6>
+                        <!--<img id='play' src='play_button.png'><div id='envoy_vid'>Watch the video</div>-->
+                    </div>
+                    <div class="goto-next" id='section_one'></div>
+                </div>
+            </section>
+
+            <!-- One -->
+            <section id="one">
+                <div id="text_upper">
+                    <div class="upper_info">
+                        <img class='symbols' src="images/extramile.png" alt="piggybank">
+                        <h2 class='one_headers'>Last Mile Convenience</h2>
+                        <p class='two_paragraph'>No need to come outside or lose your spot in the study room to get your food. Want                           your meal delivered straight to the 3rd floor of the library? We got you.</p>
+                    </div>
+                    <div class="upper_info">
+                        <img class='symbols' src="images/exclusive.png" alt="piggybank">
+                        <h2 class='one_headers'>Crazy Fast</h2>
+                        <p class='two_paragraph'>Stop waiting for other delivery services to make their way across town, we keep our                           deliveries within a mile of campus.</p>
+                    </div>
+                    <div class="upper_info">
+                        <img class='symbols' src="images/onbudget.png" alt="piggybank">
+                        <h2 class='one_headers'>$2.99 Delivery</h2>
+                        <p class='two_paragraph'>No minimums or markups, just a one-time flat fee.</p>
+                    </div>
+                </div>
+                <div id='iphone'>
+                    <!--<div id="cp_widget_2fefb225-768e-41bb-8205-52ebfc0699dc"></div><script type="text/javascript">
+                    var cpo = []; cpo["_object"] ="cp_widget_2fefb225-768e-41bb-8205-52ebfc0699dc"; cpo["_fid"] = "AABAAm8C4Iap";
+                    var _cpmp = _cpmp || []; _cpmp.push(cpo);
+                    (function() { var cp = document.createElement("script"); cp.type = "text/javascript";
+                    cp.async = true; cp.src = "//www.cincopa.com/media-platform/runtime/libasync.js";
+                    var c = document.getElementsByTagName("script")[0];
+                    c.parentNode.insertBefore(cp, c); })(); </script><noscript>Powered by Cincopa <a                                                       href='http://www.cincopa.com/video-hosting'>Video Hosting for Business</a> solution.<span>New Gallery                                 2015/5/24</span><span>cameramake</span><span> Apple</span><span>height</span><span> 3264</span>                                       <span>orientation</span><span> 6</span><span>camerasoftware</span><span> 7.1.1</span><span>originaldate</span>                         <span> 6/16/2014 12:54:19 AM</span><span>width</span><span> 2448</span><span>cameramodel</span><span> iPhone                           5s</span><span>flash</span><span> 16</span><span>cameramake</span><span> Apple</span><span>height</span><span>                         3264</span><span>orientation</span><span> 6</span><span>camerasoftware</span><span> 7.1.1</span>                                       <span>originaldate</span><span> 6/16/2014 5:17:50 PM</span><span>width</span><span> 2448</span>                                       <span>cameramodel</span><span> iPhone 5s</span><span>flash</span><span> 16</span><span>cameramake</span><span>                         Apple</span><span>height</span><span> 3264</span><span>orientation</span><span> 6</span>                                               <span>camerasoftware</span><span> 7.1.1</span><span>originaldate</span><span> 6/17/2014 1:44:29 AM</span>                             <span>width</span><span> 2448</span><span>cameramodel</span><span> iPhone 5s</span></noscript>-->
+                </div>
+                <div id="one_text">
+                </div>
+                <div class="goto-next-black" id='section_three'></div>
+            </section>
+
+            <!-- Three -->
+            <section id="three">
+                <div id="overlay3">
+                    <div id="three_content">
+                        <h2 style="padding: 0 5px 0 5px; margin-top: 80px;">See what our customers have to say.</h2>                    
+                        <div class="testimonial_quote">
+                            <a id='tweet' href='https://twitter.com/aye_okayy/status/586766154934325248'>
+                            <div class="testimonial">
+                                <img class='tweet' src="images/tweetiebird.png" alt="Twitter">
+                                <p>We can now get In N Out delivered to our dorms/apartments?! OH HAPPY DAY #envoyNow</p>
+                            </div>
+                            <div class="arrow-down"></div>
+                            @aye_okayy</a>
+                        </div>
+                        <div class="testimonial_quote">
+                            <a id='tweet' href='https://twitter.com/MaddieQuinning/status/460653403832459264'>
+                            <div class="testimonial">
+                                <img class='tweet' src="images/tweetiebird.png" alt="Twitter">
+                                <p>For example, I just ordered Chipotle from the couch. Thanks @envoynow</p>
+                            </div>
+                            <div class="arrow-down"></div>
+                            @MaddieQuinning</a>
+                        </div>
+                        <div class="testimonial_quote">
+                            <a id='tweet' href='https://twitter.com/sophiefaude/status/453425675555180544'>
+                            <div class="testimonial">
+                                <img class='tweet' src="images/tweetiebird.png" alt="Twitter">
+                                <p>@envoynow BEST COMPANY EVER</p>
+                            </div>
+                            <div class="arrow-down"></div>
+                            @sophiefaude</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="overlay4">
+                    <div id="companies">
+                        <h2>As seen on:</h2>
+                        <a class='company_links' href='http://www.inc.com/ananya-bhattacharya/coolest-college-startups-2015.html'><img                         src="images/inc.png" alt="Inc." class="company_pics" id='inc'></a>
+                        <a class='company_links' href='http://usc.spoonuniversity.com/2014/09/18/meet-usc-students-behind-new-food-delivery-app-envoy/'><img src="images/spoon.png" alt="Spoon University" class="company_pics" id='spoons'></a>
+                        <a class='company_links' href='http://techcrunch.com/2015/05/07/500-startups-accelerator-announces-its-thirteenth-batch-of-companies/'><img src="images/tech_crunch.png" alt="TechCrunch" class="company_pics" id='tc'></a>
+                    </div>
+                    <div class="goto-next" id='section_four'></div>
+                </div>
+            </section>
+
+            <!-- Four -->
+            <section id="four">
+                <div id='overlay2'>
+                    <div id="four_content">
+                        <h2 id='four_header'>Join tens of thousands of students in unlocking your school's access to EnvoyNow with the                         help of your peers!</h2>
+                    </div>
+                    <div id="four_images">
+                        <img src="images/usc.png" alt="USC" class="school_pics">
+                        <img src="images/wisco.png" alt="Wisconson University" class="school_pics">
+                        <img src="images/iu.png" alt="Indiana University" class="school_pics">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+                <footer id="footer">
+                    <div id="social_links">
+                        <a href="https://twitter.com/envoynow" class="icons"><img src="images/64-twitter.png" alt="Twitter"></a>
+                        <a href="https://www.facebook.com/envoynow" class="icons"><img src="images/64-facebook.png" alt="Facebook"></a>
+                        <a href="https://mixpanel.com/f/partner" id='ma'><img                                                                                 src="//cdn.mxpnl.com/site_media/images/partner/badge_light.png"                                                                       alt="Mobile Analytics" /></a>
+                    </div>
+                    <div id="copyright">&copy; Zhang Massura, Inc. All rights reserved.</div>
+                </footer>
+                
+                <!--Congrats Banner-->
+                
+    </body>
+</html>

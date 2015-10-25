@@ -1,0 +1,1195 @@
+html, body {
+  	margin: 0;
+  	padding: 0;
+  	text-align: center;
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+ }
+
+section {
+	height: 100vh;
+}
+
+
+#header {
+	height: 60px;
+	background-color: #FF7A7A;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+}
+
+#banner {
+	background-image: url(images/banner4_comp.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -10%;
+    position: relative;
+    color: white;
+    z-index: 0;
+}
+
+#overlay1 {
+	background-color: rgba(0, 0, 0, .65);
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	display: none;
+}
+
+
+
+#overlay3 {
+	background-color: rgba(255, 122, 122, 0.30);
+	position: relative;
+	height: 100%;
+	width: 100%;
+	z-index: 7;
+    display: block;
+}
+
+#banner_text {
+	top: 30%; /*30%*/
+	text-align: center;
+	display: block;
+	height: 100px;
+	width: 100%;
+	z-index: 1;
+	position: relative;
+	display: none;
+	font-size: 40px;
+}
+
+/*Section 1*/
+
+#one {
+	background-color: #F2F2F2;
+	position: relative;
+}
+
+#iphone {
+    margin-top: 3%;
+	height: 97%;
+	float: left;
+    position: relative;
+    background:url(images/loki_map.png) no-repeat center center;
+    display: none;
+    background-size: 279px 530px;
+    left: 8%;
+    width: 35%;
+}
+
+
+/*Section 2*/
+#two {
+	background-image: url(Assets/Map_Background.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+    z-index: 0;
+}
+
+#three {
+	background-image: url(Assets/BG6.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+    z-index: 0;
+}
+
+.goto-next {
+	background-image: url("images/arrow_white.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: block;
+	height: 2em;
+	width: 3em;
+	position: absolute;
+	bottom: 0;
+	left: 90%;
+	z-index: 10;
+}
+
+.goto-next:hover {
+    cursor: pointer;
+}
+
+.goto-next-black {
+	background-image: url("images/arrow_black.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	content: '';
+	display: block;
+	height: 2em;
+	width: 3em;
+	position: absolute;
+	bottom: 0;
+	left: 90%;
+	z-index: 10;
+}
+
+.goto-next-black:hover {
+    cursor: pointer;
+}
+
+.btn {
+  background: #ed9107;
+  background-image: -webkit-linear-gradient(top, #ed9107, #bd6e0d);
+  background-image: -moz-linear-gradient(top, #ed9107, #bd6e0d);
+  background-image: -ms-linear-gradient(top, #ed9107, #bd6e0d);
+  background-image: -o-linear-gradient(top, #ed9107, #bd6e0d);
+  background-image: linear-gradient(to bottom, #ed9107, #bd6e0d);
+  -webkit-border-radius: 3;
+  -moz-border-radius: 3;
+  border-radius: 3px;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  border: none;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+#logo  {
+	float: left;
+	margin: 0;
+	left: 0;
+	height: 60px;
+	width: 60px;
+	position: fixed;
+	display: inline-block;
+    top: 0px;
+}
+
+#logo_text {
+	display: inline-block;
+	float: left;
+	margin-left: 60px;
+    margin-top: 5px;
+    height: 50px;
+    width: 85px;
+}
+
+#play {
+	height: 50px;
+	width: 50px;
+	display: inline-block;
+	top: 500px;
+}
+
+#envoy_vid {
+	display: inline-block;
+	width: 310px;
+	padding: 0px;
+	margin: 0px;
+	height: 50px;
+}
+#one_text {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+#iphone_image {
+    display: inline-block;
+}
+
+#one_content {
+    margin-top: 30%;
+    margin-left: 20px;
+    z-index: 5;
+    display: block;
+    text-align: left;
+    color: grey;
+}
+
+.input_field {
+    height: 40px;
+    border-radius: 10px;
+    width: 250px;
+    border: 1px solid darkgrey;
+    color: #b0b0b0;
+    font-size: 20px;
+    display: inline-block;
+    position: relative;
+    top: 0;
+    z-index: 10;
+    padding-left: 10px;
+    
+}
+
+#container {
+    width: 500px;
+    overflow: hidden;
+    background: white;
+}
+
+.photobanner {
+    height: 300px;
+    width: 400px;
+}
+
+/*keyframe animations*/
+.first {
+    -webkit-animation: bannermove 30s linear infinite;
+       -moz-animation: bannermove 30s linear infinite;
+        -ms-animation: bannermove 30s linear infinite;
+         -o-animation: bannermove 30s linear infinite;
+            animation: bannermove 30s linear infinite;
+    height: 300px;
+    width: 400px;
+}
+ 
+@keyframes "bannermove" {
+ 0% {
+    margin-left: 0px;
+ }
+ 100% {
+    margin-left: -2125px;
+ }
+ 
+}
+ 
+@-moz-keyframes bannermove {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+ 
+}
+ 
+@-webkit-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+ 
+}
+ 
+@-ms-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+ 
+}
+ 
+@-o-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+ 
+}
+
+#cp_widget_2fefb225-768e-41bb-8205-52ebfc0699dc {
+    height: 600px;
+    width: 160px;
+    margin: 0 auto;
+    position: relative;
+	top: 450px;
+	transform: translateY(-50%);
+}
+
+#text_upper {
+    width: 50%;
+    height: 100%;
+    float: right;
+    margin: 0;
+    margin-right: 8%;
+    padding: 0;
+    color: grey;
+    margin-bottom: 0;
+    margin-top: 220px;
+}
+
+#text_lower {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    background-color: orange;
+}
+
+.upper_info {
+    width: 100%;
+    height: 33%;
+    position: relative;
+    vertical-align: middle;
+}
+
+.symbols {
+    height: 80px;
+    width: 80px;
+    margin-left: 40px;
+    display: inline-block;
+    float: left;
+    vertical-align: middle;
+    display: none;
+}
+
+.two_paragraph {
+    float: left;
+    width: 40%;
+    vertical-align: middle;
+    vertical-align: top;
+    margin-top: -10px;
+    margin-left: 30px;
+}
+
+#four {
+    background-image: url(Assets/bg5.JPG);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+    z-index: 0;
+}
+
+#four_header {
+    width: 100%;
+    font-size: 20px;
+    padding: 0;
+    display: block;
+    margin-top: 200px;
+}
+
+#four_content {
+	text-align: center;
+	width: 100%;
+	z-index: 5;
+	position: relative;
+	font-size: 20px;
+    height: auto;
+    display: block;
+    margin: 0;
+    top: 0;
+}
+
+#four_images {
+	width: 100%;
+	z-index: 2;
+	position: relative;
+	font-size: 40px;
+    height: auto;
+    display: block;
+    margin-top: 30px;
+}
+
+.arrow-down {
+	width: 0; 
+	height: 0; 
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 20px solid white;
+    vertical-align: bottom;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+}
+
+<div class="arrow-down"> {
+    
+}
+
+#footer {
+    margin: 0;
+    height: auto;
+    width: 100%;
+    display: block;
+    background-color: #CCCCCC;
+}
+
+#text_upper_four {
+    width: auto;
+    height: auto;
+    padding: 10px;
+    color: white;
+    margin-top: 100px;
+    right: 0px;
+    background-color: rgba(0, 0, 0, .8);
+    text-align: center;
+    display: block;
+    position: absolute;
+}
+
+.reposition {
+    height: 50px;
+    width: auto;
+    font-size: 20px;
+    display: inline-block;
+    position: relative;
+}
+
+#email_input {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.icons {
+    text-decoration: none;
+    display: inline-block;
+    height: 64px;
+    width: 64px;
+    margin-top: 20px;
+    /*float: left;*/
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#copyright {
+    display: block;
+    width: 100%;
+    text-align: center;
+    height: 20px;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+#apple_badge {
+    float: right;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+#ma {
+    /*float: right;*/
+    /*margin-right: 20px;*/
+    margin-top: -10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#social_links {
+    width: 100%;
+    height: 100px;
+    display: block;
+}
+
+#twitter {
+    height: 60px;
+    width: 60px;
+    margin-left: 20px;
+}
+
+#facebook {
+    height: 60px;
+    width: 60px;
+    margin-right: 20px;
+}
+
+#links {
+    margin-top: 40px;
+}
+
+.one_titles {
+    color: #54524d;
+    font-size: 20px;
+}
+
+#section_one {
+    display: none;
+}
+
+#profile_pic {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    margin-top: 150px;
+}
+
+#pp_image {
+    display: none;
+    margin: 0 auto;
+    height: 200px;
+    width: 200px;
+    z-index: 5;
+    position: relative;
+    top: 100px;
+}
+
+.section_title {
+    font-size: 40px;
+    padding: 5px;
+}
+
+#three_content {
+    margin-top: 100px;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    float: left;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+#JC {
+    height: 300px;
+    width: 300px;
+    float: left;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+#ZK {
+    height: 300px;
+    width: 300px;
+    float: right;
+    margin-right: 100px;
+    margin-top: 100px;
+}
+
+#iphone2 {
+    margin-top: 5%;
+	height: 80%;
+	float: right;
+    position: relative;
+    background:url(Assets/AW_Phone.png) no-repeat center center;
+    display: block;
+    background-size: 229px 470px;
+    right: 5%;
+    width: 29%;
+}
+
+#JC_Container {
+    width: 50%;
+    left: 700px;
+    height: 80%;
+    display: inline-block;
+    float: right;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 50;
+}
+
+#ZK_Container {
+    width: 50%;
+    right: 700px;
+    height: 80%;
+    display: inline-block;
+    float: left;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 50;
+}
+
+#two_content {
+    height: 20%;
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(0,0,0,.8);
+}
+
+#wil {
+    margin-top: 10px;    
+    font-size: 40px;
+}
+
+#J_hover {
+    width: 50%;
+    height: 80%;
+    z-index: 50;
+    position: absolute;
+    float: left;
+    display: none;
+    text-align: center;
+    background-color: rgba(0,0,0,.8);
+}
+
+#Z_hover {
+    width: 50%;
+    height: 80%;
+    left: 50%;
+    z-index: 50;
+    position: absolute;
+    float: right;
+    display: none;
+    text-align: center;
+    background-color: rgba(0,0,0,.8);
+}
+
+#two_header {
+    width: 100%;
+}
+
+.bios {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+#five {
+    background-image: url(Assets/BG4_Edit.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center;
+    color: white;
+    z-index: 0;
+}
+
+#ready {
+    font-size: 200%;
+    padding: 10px;
+    height: auto;
+    display: block;
+    margin-top: 80%;
+    color: white;
+    width: auto;
+}
+
+#five_content {
+    margin-left: 10%;
+    width: 25%;
+    height: 100%;
+    display: block;
+    float: left;
+}
+
+
+/*iPhone 5 - 320*/
+@media only screen and (min-width: 0px) and (max-width: 1140px) {
+    #logo_text {
+        display: inline-block;
+        float: left;
+        margin-left: 60px;
+        margin-top: 5px;
+        height: 50px;
+        width: 85px;
+    }
+    
+    #banner {
+	    height: 500px;
+        display: block;
+        width: 100%;
+        background-position: 0%;
+    }
+    
+    #banner_text {
+	    top: 10%;
+    }
+    
+    .goto-next {
+        display: none;
+    }
+    
+    .goto-next-black {
+        display: none;
+    }
+    
+    .upper_info {
+        width: 100%;
+        height: auto;
+        position: relative;
+        vertical-align: middle;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    
+    .symbols {
+        height: 80px;
+        width: 80px;
+        margin-left: 0px;
+        display: block;
+        float: none;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    
+    .two_paragraph {
+        float: none;
+        width: 40%;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    #one {
+        height: auto;
+        overflow: auto;
+    }
+    
+    #text_upper {
+        width: 100%;
+        height: auto; /*1000*/
+        float: none;
+        display: block;
+        margin-top: 10px;
+        text-align: center;
+    }
+    
+    #iphone {
+	    width: 100%;
+	    height: 500px;
+        display: block;
+        margin-right: 0;
+        margin-left: 0;
+        left: auto;
+    }
+    
+    #three {
+        height: auto;
+        overflow: hidden;
+    }
+    
+    #iphone2 {
+	    width: 100%;
+	    height: 500px;
+        display: block;
+        margin-right: 0;
+        margin-left: 0;
+        left: auto;
+        right: auto;
+        background-size: 221px 450px;
+        overflow: hidden;
+    }
+    
+    #three_content {
+        width: 100%;
+        height: auto; /*1000*/
+        float: none;
+        display: block;
+        margin-top: 10px;
+        text-align: center;
+    }
+    
+    #overlay3 {
+        height: 100%;
+        width: 100%;
+    }
+    
+    #four {
+        height: 500px;
+        overflow: auto;
+    }
+    
+    #text_upper_four {
+        width: 100%;
+        height: auto;
+        bottom: 0%;
+        padding: 10px;
+        color: white;
+        background-color: rgba(0, 0, 0, .5);
+        text-align: center;
+    }
+    
+    #copyright {
+        display: block;
+        width: 100%;
+        text-align: center;
+        height: 20px;
+        color: black;
+        padding-top: 12px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    
+    
+    /*Two*/
+    #two {
+        height: auto;
+        overflow: auto;
+    }
+    
+    #two_content {
+        height: 20%;
+        width: 100%;
+        text-align: center;
+        display: block;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgba(0,0,0,.8);
+    }
+    
+    #JC_Container {
+        width: 100%;
+        left: 0px;
+        height: auto;
+        display: block;
+        float: none;
+        background-color: rgba(0, 0, 0, 0);
+        z-index: 50;
+    }
+    
+    #JC {
+        height: 30%;
+        width: 30%;
+        float: right;
+        margin: 10%;
+        display: block;
+    }
+
+    #ZK {
+        height: 30%;
+        width: 30%;
+        float: left;
+        margin: 10%;
+        display: block;
+    }
+    
+    #ZK_Container {
+        width: 100%;
+        left: 0px;
+        height: auto;
+        display: block;
+        float: none;
+        background-color: rgba(0, 0, 0, 0);
+        z-index: 50;
+    }
+    
+    #J_hover {
+        width: 100%;
+        height: auto;
+        left: 0%;
+        z-index: 50;
+        position: relative;
+        float: left;
+        display: block;
+        text-align: center;
+        background-color: rgba(0,0,0,.8);
+    }
+
+    #Z_hover {
+        width: 100%;
+        height: auto;
+        left: 0%;
+        z-index: 50;
+        position: relative;
+        float: left;
+        display: block;
+        text-align: center;
+        background-color: rgba(0,0,0,.8);
+    }
+    
+    /*Five*/
+    #ready {
+        font-size: 200%;
+        padding: 10px;
+        height: auto;
+        display: block;
+        margin-top: 33px;
+        color: white;
+        width: auto;
+        text-align: center;
+    }
+
+    #five_content {
+        margin-left: 0%;
+        width: 100%;
+        height: 125px;
+        display: block;
+        float: left;
+        text-align: center;
+        background-color: #FF7A7A;
+    }
+}
+
+@media only screen and (min-height: 0px) and (max-height: 560px)  {
+    #banner {
+	    height: 500px;
+        display: block;
+        width: 100%;
+        background-position: 0%;
+    }
+    
+    #banner_text {
+	    top: 10%;
+    }
+    
+    .goto-next {
+        display: none;
+    }
+    
+    .goto-next-black {
+        display: none;
+    }
+    
+    .upper_info {
+        width: 100%;
+        height: auto;
+        position: relative;
+        vertical-align: middle;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    
+    .symbols {
+        height: 80px;
+        width: 80px;
+        margin-left: 0px;
+        display: block;
+        float: none;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    
+    .two_paragraph {
+        float: none;
+        width: 40%;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    #one {
+        height: auto;
+        overflow: auto;
+    }
+    
+    #text_upper {
+        width: 100%;
+        height: auto; /*1000*/
+        float: none;
+        display: block;
+        margin-top: 10px;
+        text-align: center;
+    }
+    
+    #iphone {
+	    width: 100%;
+	    height: 500px;
+        display: block;
+        margin-right: 0;
+        margin-left: 0;
+        left: auto;
+    }
+    
+    #overlay3 {
+        height: 100%;
+        width: 100%;
+    }
+    
+    #four {
+        height: 500px;
+        overflow: auto;
+    }
+    
+    #three {
+        height: auto;
+        overflow: hidden;
+    }
+    
+    #three_content {
+        width: 100%;
+        height: auto; /*1000*/
+        float: none;
+        display: block;
+        margin-top: 10px;
+        text-align: center;
+    }
+    
+    #iphone2 {
+	    width: 100%;
+	    height: 500px;
+        display: block;
+        margin-right: 0;
+        margin-left: 0;
+        left: auto;
+        right: auto;
+        background-size: 221px 450px;
+        overflow: hidden;
+    }
+    
+    #four_header {
+        width: 100%;
+        font-size: 20px;
+        padding: 0;
+        display: block;
+        margin-top: 55px;
+    }
+    
+    #four_content {
+        height: 300px;
+    }
+    
+    #four_images {
+        height: 250px;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    
+    #text_upper_four {
+        width: 100%;
+        height: auto;
+        bottom: 0%;
+        padding: 10px;
+        color: white;
+        background-color: rgba(0, 0, 0, .5);
+        text-align: center;
+    }
+    
+    .school_pics {
+        margin-bottom: 20px;
+    }
+    
+    #email_input {
+        margin-bottom: 10px;
+    }
+    
+    #copyright {
+        display: block;
+        width: 100%;
+        text-align: center;
+        height: 20px;
+        color: white;
+        padding-top: 12px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    
+    /*Two*/
+    #two {
+        height: auto;
+        overflow: auto;
+    }
+    
+    #two_content {
+        height: 20%;
+        width: 100%;
+        text-align: center;
+        display: block;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgba(0,0,0,.8);
+    }
+    
+    #JC_Container {
+        width: 100%;
+        left: 0px;
+        height: auto;
+        display: block;
+        float: none;
+        background-color: rgba(0, 0, 0, 0);
+        z-index: 50;
+    }
+    
+    #JC {
+        height: 30%;
+        width: 30%;
+        float: right;
+        margin: 10%;
+        margin-top: auto;
+        display: block;
+    }
+
+    #ZK {
+        height: 30%;
+        width: 30%;
+        float: left;
+        margin: 10%;
+        margin-top: auto;
+        display: block;
+    }
+    
+    #ZK_Container {
+        width: 100%;
+        left: 0px;
+        height: auto;
+        display: block;
+        float: none;
+        background-color: rgba(0, 0, 0, 0);
+        z-index: 50;
+    }
+    
+    #J_hover {
+        width: 100%;
+        height: auto;
+        left: 0%;
+        z-index: 50;
+        position: relative;
+        float: left;
+        display: block;
+        text-align: center;
+        background-color: rgba(0,0,0,.8);
+    }
+
+    #Z_hover {
+        width: 100%;
+        height: auto;
+        left: 0%;
+        z-index: 50;
+        position: relative;
+        float: left;
+        display: block;
+        text-align: center;
+        background-color: rgba(0,0,0,.8);
+    }
+
+    /*Five*/
+    #ready {
+        font-size: 200%;
+        padding: 10px;
+        height: auto;
+        display: block;
+        margin-top: 33px;
+        color: white;
+        width: auto;
+        text-align: center;
+    }
+
+    #five_content {
+        margin-left: 0%;
+        width: 100%;
+        height: 125px;
+        display: block;
+        float: left;
+        text-align: center;
+        background-color: #FF7A7A;
+    }
+}

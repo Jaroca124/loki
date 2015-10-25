@@ -1,0 +1,1548 @@
+html, body {
+  	margin: 0;
+  	padding: 0;
+  	text-align: center;
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+ }
+
+section {
+	height: 100vh;
+}
+
+
+#header {
+	height: 60px;
+	background-color: #FF7A7A;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+}
+
+#banner {
+	background-image: url(images/banner4_comp.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -10%;
+    position: relative;
+    color: white;
+    z-index: 0;
+}
+
+#overlay1 {
+	background-color: rgba(0, 0, 0, .65);
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	display: none;
+}
+
+.style-1 input[type="text"] {
+  padding: 10px;
+  margin: 0;
+  width: 200px;
+  border: solid 1px #dcdcdc;
+  transition: box-shadow 0.3s, border 0.3s;
+}
+.style-1 input[type="text"]:focus,
+.style-1 input[type="text"].focus {
+  border: solid 1px #707070;
+  box-shadow: 0 0 5px 1px #969696;
+}
+
+input[type="text"] {
+  display: block;
+  margin: 0;
+  width: 100%;
+  font-family: sans-serif;
+  font-size: 18px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+}
+input[type="text"]:focus {
+  outline: none;
+}
+
+#overlay3 {
+	background-color: rgba(255, 122, 122, 0.30);
+	position: relative;
+	height: 100%;
+	width: 100%;
+	z-index: 7;
+    display: block;
+}
+
+#banner_text {
+	top: 30%; /*30%*/
+	text-align: center;
+	display: block;
+	height: 100px;
+	width: 100%;
+	z-index: 1;
+	position: relative;
+	display: none;
+	font-size: 40px;
+}
+
+/*Section 1*/
+
+#one {
+	background-color: #F2F2F2;
+	position: relative;
+}
+
+#iphone {
+    margin-top: 3%;
+	height: 97%;
+	float: left;
+    position: relative;
+    background:url(images/loki_map.png) no-repeat center center;
+    display: none;
+    background-size: 279px 530px;
+    left: 8%;
+    width: 35%;
+}
+
+
+/*Section 2*/
+#two {
+	background-image: url(Assets/Map_Background.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+    z-index: 0;
+}
+
+#three {
+	background-image: url(Assets/BG6.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+    z-index: 0;
+}
+
+.goto-next {
+	background-image: url("images/arrow_white.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: block;
+	height: 2em;
+	width: 3em;
+	position: absolute;
+	bottom: 0;
+	left: 90%;
+	z-index: 10;
+}
+
+.goto-next:hover {
+    cursor: pointer;
+}
+
+.goto-next-black {
+	background-image: url("images/arrow_black.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	content: '';
+	display: block;
+	height: 2em;
+	width: 3em;
+	position: absolute;
+	bottom: 0;
+	left: 90%;
+	z-index: 10;
+}
+
+.goto-next-black:hover {
+    cursor: pointer;
+}
+
+.btn {
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #FF7A7A;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  margin-bottom: 40px;
+  display: block;
+  margin: 0 auto;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+#logo  {
+	float: left;
+	margin: 0;
+	left: 0;
+	height: 60px;
+	width: 60px;
+	position: fixed;
+	display: inline-block;
+    top: 0px;
+}
+
+#logo_text {
+	display: inline-block;
+	float: left;
+	margin-left: 60px;
+    margin-top: 5px;
+    height: 47px;
+    width: 80px;
+}
+
+#one_text {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+#iphone_image {
+    display: inline-block;
+}
+
+#one_content {
+    margin-top: 30%;
+    margin-left: 20px;
+    z-index: 5;
+    display: block;
+    text-align: left;
+    color: grey;
+}
+
+.input_field {
+    height: 40px;
+    border-radius: 10px;
+    width: 250px;
+    border: 1px solid darkgrey;
+    color: #b0b0b0;
+    font-size: 20px;
+    display: inline-block;
+    position: relative;
+    top: 0;
+    z-index: 10;
+    padding-left: 10px;
+    
+}
+
+#container {
+    width: 500px;
+    overflow: hidden;
+    background: white;
+}
+
+.photobanner {
+    height: 300px;
+    width: 400px;
+}
+
+/*keyframe animations*/
+.first {
+    -webkit-animation: bannermove 30s linear infinite;
+       -moz-animation: bannermove 30s linear infinite;
+        -ms-animation: bannermove 30s linear infinite;
+         -o-animation: bannermove 30s linear infinite;
+            animation: bannermove 30s linear infinite;
+    height: 300px;
+    width: 400px;
+}
+ 
+@keyframes "bannermove" {
+ 0% {
+    margin-left: 0px;
+ }
+ 100% {
+    margin-left: -2125px;
+ }
+ 
+}
+ 
+@-moz-keyframes bannermove {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+ 
+}
+ 
+@-webkit-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+ 
+}
+ 
+@-ms-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+ 
+}
+ 
+@-o-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+ 
+}
+
+#cp_widget_2fefb225-768e-41bb-8205-52ebfc0699dc {
+    height: 600px;
+    width: 160px;
+    margin: 0 auto;
+    position: relative;
+	top: 450px;
+	transform: translateY(-50%);
+}
+
+#text_upper {
+    width: 50%;
+    height: 100%;
+    float: right;
+    margin: 0;
+    margin-right: 8%;
+    padding: 0;
+    color: grey;
+    margin-bottom: 0;
+    margin-top: 220px;
+}
+
+#text_lower {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    background-color: orange;
+}
+
+.upper_info {
+    width: 100%;
+    height: 33%;
+    position: relative;
+    vertical-align: middle;
+}
+
+.symbols {
+    height: 80px;
+    width: 80px;
+    margin-left: 40px;
+    display: inline-block;
+    float: left;
+    vertical-align: middle;
+    display: none;
+}
+
+.two_paragraph {
+    float: left;
+    width: 40%;
+    vertical-align: middle;
+    vertical-align: top;
+    margin-top: -10px;
+    margin-left: 30px;
+}
+
+#four {
+    /*background-image: url(Assets/bg5.JPG);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;*/
+    position: relative;
+    color: white;
+    /*z-index: 0;*/
+}
+
+#four_header {
+    width: 100%;
+    font-size: 20px;
+    padding: 0;
+    display: block;
+    margin-top: 200px;
+}
+
+#four_content {
+	text-align: center;
+	width: 100%;
+	z-index: 5;
+	position: relative;
+	font-size: 20px;
+    height: auto;
+    display: block;
+    margin: 0;
+    top: 0;
+}
+
+#four_images {
+	width: 100%;
+	z-index: 2;
+	position: relative;
+	font-size: 40px;
+    height: auto;
+    display: block;
+    margin-top: 30px;
+}
+
+.arrow-down {
+	width: 0; 
+	height: 0; 
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 20px solid white;
+    vertical-align: bottom;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+}
+
+<div class="arrow-down"> {
+    
+}
+
+#footer {
+    margin: 0;
+    height: auto;
+    width: 100%;
+    display: block;
+    background-color: #6B6B6B;
+    overflow: hidden;
+}
+
+#text_upper_four {
+    width: auto;
+    height: auto;
+    padding: 10px;
+    color: white;
+    margin-top: 100px;
+    right: 0px;
+    background-color: rgba(0, 0, 0, .8);
+    text-align: center;
+    display: block;
+    position: absolute;
+    z-index: 5;
+}
+
+.reposition {
+    height: 50px;
+    width: auto;
+    font-size: 20px;
+    display: inline-block;
+    position: relative;
+}
+
+#email_input {
+    padding: 10px;
+    margin: 0;
+    width: 200px;
+    border: solid 1px #dcdcdc;
+    transition: box-shadow 0.3s, border 0.3s;
+    margin-bottom: 10px;
+}
+
+.icons {
+    text-decoration: none;
+    display: inline-block;
+    height: 64px;
+    width: 64px;
+    margin-top: 20px;
+    /*float: left;*/
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#copyright {
+    display: block;
+    width: 100%;
+    text-align: center;
+    height: 20px;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+#apple_badge {
+    float: right;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+#ma {
+    /*float: right;*/
+    /*margin-right: 20px;*/
+    margin-top: -10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#social_links {
+    width: 100%;
+    height: 100px;
+    display: block;
+}
+
+#twitter {
+    height: 60px;
+    width: 60px;
+    margin-left: 20px;
+}
+
+#facebook {
+    height: 60px;
+    width: 60px;
+    margin-right: 20px;
+}
+
+#links {
+    margin-top: 40px;
+}
+
+.one_titles {
+    color: #54524d;
+    font-size: 20px;
+}
+
+#section_one {
+    display: block;
+}
+
+#profile_pic {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    margin-top: 150px;
+}
+
+#pp_image {
+    display: none;
+    margin: 0 auto;
+    height: 200px;
+    width: 200px;
+    z-index: 5;
+    position: relative;
+    top: 100px;
+}
+
+.section_title {
+    font-size: 40px;
+    padding: 5px;
+}
+
+#three_content {
+    margin-top: 100px;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    float: left;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+#JC {
+    height: 300px;
+    width: 300px;
+    float: left;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+#ZK {
+    height: 300px;
+    width: 300px;
+    float: right;
+    margin-right: 100px;
+    margin-top: 100px;
+}
+
+#iphone2 {
+    margin-top: 5%;
+	height: 80%;
+	float: right;
+    position: relative;
+    background:url(Assets/AW_Phone.png) no-repeat center center;
+    display: block;
+    background-size: 229px 470px;
+    right: 5%;
+    width: 29%;
+}
+
+#JC_Container {
+    width: 50%;
+    left: 700px;
+    height: 80%;
+    display: inline-block;
+    float: right;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 50;
+}
+
+#ZK_Container {
+    width: 50%;
+    right: 700px;
+    height: 80%;
+    display: inline-block;
+    float: left;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 50;
+}
+
+#two_content {
+    height: 20%;
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(0,0,0,.8);
+}
+
+#wil {
+    margin-top: 10px;    
+    font-size: 40px;
+}
+
+#J_hover {
+    width: 50%;
+    height: 80%;
+    z-index: 50;
+    position: absolute;
+    float: left;
+    display: none;
+    text-align: center;
+    background-color: rgba(0,0,0,.8);
+}
+
+#Z_hover {
+    width: 50%;
+    height: 80%;
+    left: 50%;
+    z-index: 50;
+    position: absolute;
+    float: right;
+    display: none;
+    text-align: center;
+    background-color: rgba(0,0,0,.8);
+}
+
+#two_header {
+    width: 100%;
+}
+
+.bios {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+#five {
+    background-image: url(Assets/BG4_Edit.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center;
+    color: white;
+    z-index: 0;
+}
+
+#ready {
+    font-size: 200%;
+    padding: 10px;
+    height: auto;
+    display: block;
+    margin-top: 80%;
+    color: white;
+    width: auto;
+}
+
+#five_content {
+    margin-left: 10%;
+    width: 25%;
+    height: 100%;
+    display: block;
+    float: left;
+}
+
+#signup {
+    width: auto;
+    height: auto;
+    padding: 10px;
+    color: white;
+    margin-top: 130px;
+    right: 0px;
+    background-color: rgba(0, 0, 0, .8);
+    text-align: center;
+    display: block;
+    position: absolute;
+}
+
+#notify {
+    font-size: 200%;
+    padding-bottom: 0px;
+    height: auto;
+    display: block;
+    color: white;
+    width: auto;
+    overflow: hidden;
+}
+
+#five_bg {
+    background-image: url(Assets/BG4_Edit.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    display: none;
+    position: relative;
+    background-position: center;
+    color: white;
+    margin: 0px;
+}
+
+#input_list {
+    list-style-type: none;
+    margin-top: 20px;
+    width: 90%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: block;
+}
+
+#confirmation_box {
+    height: auto;
+    width: 90%;
+    background-color: white;
+    position: absolute;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    top: 20%;
+    left: 5%;
+    text-align: center;
+}
+
+#confirmation_banner {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .75);
+    position: fixed;
+    display: none;
+    margin: 0 auto;
+    z-index: 120;
+}
+
+.congrats_text {
+    padding: 10px;
+    color: #FF7A7A;
+}
+
+#congrats_button {
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #FF7A7A;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  margin: 0 auto 20px;
+  display: block;
+}
+
+#congrats_button:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+#permission {
+    display: block;
+    width: auto;
+    text-align: center;
+    font-size: 5px;
+    color: white;    
+}
+
+#mc_signup_form {
+    width: 100%;
+    z-index: 10;
+    background-color: red;
+    overflow: hidden;
+    
+}
+
+#dyn_bg {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    /*z-index: 0;*/
+}
+
+#beta_button {
+    display: block;
+    z-index: 50;
+    float: right;
+    height: 100%;
+    width: 30%;
+    margin-right: 5%;
+}
+
+#join_btn {
+    margin-top: 63%;
+}
+
+
+/*iPhone 5 - 320*/
+@media only screen and (min-width: 0px) and (max-width: 1140px) {
+    #logo_text {
+        display: inline-block;
+        float: left;
+        margin-left: 60px;
+        margin-top: 5px;
+        height: 47px;
+        width: 80px;
+    }
+    
+    #banner {
+	    height: 720px;
+        display: block;
+        background-position: 0%;
+    }
+    
+    #banner_text {
+	    top: 10%;
+    }
+    
+    .goto-next {
+        display: none;
+    }
+    
+    .goto-next-black {
+        display: none;
+    }
+    
+    .upper_info {
+        width: 100%;
+        height: auto;
+        position: relative;
+        vertical-align: middle;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    
+    .symbols {
+        height: 80px;
+        width: 80px;
+        margin-left: 0px;
+        display: block;
+        float: none;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    
+    .two_paragraph {
+        float: none;
+        width: 40%;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    #one {
+        height: auto;
+        overflow: auto;
+    }
+    
+    #text_upper {
+        width: 100%;
+        height: auto; /*1000*/
+        float: none;
+        display: block;
+        margin-top: 10px;
+        text-align: center;
+    }
+    
+    #iphone {
+	    width: 100%;
+	    height: 500px;
+        display: block;
+        margin-right: 0;
+        margin-left: 0;
+        left: auto;
+    }
+    
+    #three {
+        height: auto;
+        overflow: hidden;
+    }
+    
+    #iphone2 {
+	    width: 100%;
+	    height: 500px;
+        display: block;
+        margin-right: 0;
+        margin-left: 0;
+        left: auto;
+        right: auto;
+        background-size: 221px 450px;
+        overflow: hidden;
+    }
+    
+    #three_content {
+        width: 100%;
+        height: auto; /*1000*/
+        float: none;
+        display: block;
+        margin-top: 10px;
+        text-align: center;
+        padding: 0px;
+    }
+    
+    #overlay3 {
+        height: 100%;
+        width: 100%;
+    }
+    
+    #four {
+        height: 500px;
+        overflow: auto;
+    }
+    
+    #text_upper_four {
+        width: 100%;
+        height: 100%;
+        bottom: 0%;
+        padding: 0px;
+        color: white;
+        background-color: rgba(0, 0, 0, .5);
+        text-align: center;
+    }
+    
+    #copyright {
+        display: block;
+        width: 100%;
+        text-align: center;
+        height: 20px;
+        color: white;
+        padding-top: 12px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    
+    
+    /*Two*/
+    #two {
+        height: auto;
+        overflow: auto;
+    }
+    
+    #two_content {
+        height: 20%;
+        width: 100%;
+        text-align: center;
+        display: block;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgba(0,0,0,.8);
+    }
+    
+    #JC_Container {
+        width: 100%;
+        left: 0px;
+        height: auto;
+        display: block;
+        float: none;
+        background-color: rgba(0, 0, 0, 0);
+        z-index: 50;
+    }
+    
+    #JC {
+        height: 30%;
+        width: 30%;
+        float: right;
+        margin: 10%;
+        margin-top: 50px;
+        display: block;
+    }
+
+    #ZK {
+        height: 30%;
+        width: 30%;
+        float: left;
+        margin: 10%;
+        margin-top: 50px;
+        display: block;
+    }
+    
+    #ZK_Container {
+        width: 100%;
+        left: 0px;
+        height: auto;
+        display: block;
+        float: none;
+        background-color: rgba(0, 0, 0, 0);
+        z-index: 50;
+    }
+    
+    #J_hover {
+        width: 100%;
+        height: auto;
+        left: 0%;
+        z-index: 50;
+        position: relative;
+        float: left;
+        display: block;
+        text-align: center;
+        background-color: rgba(0,0,0,.8);
+    }
+
+    #Z_hover {
+        width: 100%;
+        height: auto;
+        left: 0%;
+        z-index: 50;
+        position: relative;
+        float: left;
+        display: block;
+        text-align: center;
+        background-color: rgba(0,0,0,.8);
+    }
+    
+    /*Five*/
+    #ready {
+        font-size: 200%;
+        padding: 10px;
+        height: auto;
+        display: block;
+        margin-top: 33px;
+        color: white;
+        width: auto;
+        text-align: center;
+    }
+
+    #five_content {
+        margin-left: 0%;
+        width: 100%;
+        height: 125px;
+        display: block;
+        float: left;
+        text-align: center;
+        background-color: #FF7A7A;
+        display: block;
+        position: relative;
+    }
+    
+    #signup {
+        width: 100%;
+        height: auto;
+        color: white;
+        background-color: #2A272B;
+        text-align: center;
+        position: relative;
+        display: block;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    #five_bg {
+        position: relative;
+        display: block;
+    }
+    
+    #five {
+        height: auto;
+        overflow: auto;
+        background-image: none;
+        -webkit-background-size: auto;
+        -moz-background-size: auto;
+        -o-background-size: auto;
+        background-size: auto;
+        background-repeat: auto;
+    }
+    
+    #section_one {
+        display: none;
+    }
+    
+    #input_list {
+        list-style-type: none;
+        margin-top: 20px;
+        width: 100%;
+        display: block;
+    }
+    
+    #notify {
+        font-size: 150%;
+        margin: 0;
+        padding-top: 20px;    
+        padding-bottom: 10px;
+        height: 75px;
+        display: block;
+        color: white;
+        width: auto;
+        overflow: hidden;
+    }
+    
+    #confirmation_box {
+        height: auto;
+        width: 90%;
+        background-color: white;
+        position: absolute;
+        display: block;
+        margin: 0 auto;
+        border-radius: 10px;
+        top: 5%;
+        left: 5%;
+        text-align: center;
+    }
+    
+    #six {
+        height: auto;
+        overflow: auto;
+    }
+    
+    #beta_button {
+        width: 100%;
+        height: auto;
+        color: white;
+        background-color: #2A272B;
+        text-align: center;
+        position: relative;
+        display: block;
+        margin: 0px;
+        padding-top: 10px;
+    }
+    
+    #join_btn {
+        margin-top: 0%;
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (min-height: 0px) and (max-height: 560px)  {
+    #section_one {
+        display: none;
+    }
+    
+    #banner {
+	    height: 720px;
+        display: block;
+        background-position: 0%;
+    }
+    
+    #banner_text {
+	    top: 10%;
+    }
+    
+    .goto-next {
+        display: none;
+    }
+    
+    .goto-next-black {
+        display: none;
+    }
+    
+    .upper_info {
+        width: 100%;
+        height: auto;
+        position: relative;
+        vertical-align: middle;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    
+    .symbols {
+        height: 80px;
+        width: 80px;
+        margin-left: 0px;
+        display: block;
+        float: none;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    
+    .two_paragraph {
+        float: none;
+        width: 40%;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    #one {
+        height: auto;
+        overflow: auto;
+    }
+    
+    #text_upper {
+        width: 100%;
+        height: auto; /*1000*/
+        float: none;
+        display: block;
+        margin-top: 10px;
+        text-align: center;
+    }
+    
+    #logo_text {
+        display: inline-block;
+        float: left;
+        margin-left: 60px;
+        margin-top: 5px;
+        height: 47px;
+        width: 80px;
+    }
+    
+    #iphone {
+	    width: 100%;
+	    height: 500px;
+        display: block;
+        margin-right: 0;
+        margin-left: 0;
+        left: auto;
+    }
+    
+    #overlay3 {
+        height: 100%;
+        width: 100%;
+    }
+    
+    #four {
+        height: 500px;
+        overflow: auto;
+    }
+    
+    #three {
+        height: auto;
+        overflow: hidden;
+    }
+    
+    #three_content {
+        width: 100%;
+        height: auto; /*1000*/
+        float: none;
+        display: block;
+        margin-top: 10px;
+        text-align: center;
+        padding: 0px;
+        padding-bottom: 10px;
+    }
+    
+    #iphone2 {
+	    width: 100%;
+	    height: 500px;
+        display: block;
+        margin-right: 0;
+        margin-left: 0;
+        left: auto;
+        right: auto;
+        background-size: 221px 450px;
+        overflow: hidden;
+    }
+    
+    #four_header {
+        width: 100%;
+        font-size: 20px;
+        padding: 0;
+        display: block;
+        margin-top: 55px;
+    }
+    
+    #four_content {
+        height: 300px;
+    }
+    
+    #four_images {
+        height: 250px;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    
+    #text_upper_four {
+        width: 100%;
+        height: 100%;
+        bottom: 0%;
+        padding: 0px;
+        color: white;
+        background-color: rgba(0, 0, 0, .5);
+        text-align: center;
+    }
+    
+    .school_pics {
+        margin-bottom: 20px;
+    }
+    
+    #email_input {
+        padding: 10px;
+        margin: 0;
+        width: 200px;
+        border: solid 1px #dcdcdc;
+        transition: box-shadow 0.3s, border 0.3s;
+        margin-bottom: 20px;
+    }
+    
+    #copyright {
+        display: block;
+        width: 100%;
+        text-align: center;
+        height: 20px;
+        color: white;
+        padding-top: 12px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    
+    /*Two*/
+    #two {
+        height: auto;
+        overflow: auto;
+    }
+    
+    #two_content {
+        height: 20%;
+        width: 100%;
+        text-align: center;
+        display: block;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgba(0,0,0,.8);
+    }
+    
+    #JC_Container {
+        width: 100%;
+        left: 0px;
+        height: auto;
+        display: block;
+        float: none;
+        background-color: rgba(0, 0, 0, 0);
+        z-index: 50;
+    }
+    
+    #JC {
+        height: 30%;
+        width: 30%;
+        float: right;
+        margin: 10%;
+        margin-top: 50px;
+        display: block;
+    }
+
+    #ZK {
+        height: 30%;
+        width: 30%;
+        float: left;
+        margin: 10%;
+        margin-top: 50px;
+        display: block;
+    }
+    
+    #ZK_Container {
+        width: 100%;
+        left: 0px;
+        height: auto;
+        display: block;
+        float: none;
+        background-color: rgba(0, 0, 0, 0);
+        z-index: 50;
+    }
+    
+    #J_hover {
+        width: 100%;
+        height: auto;
+        left: 0%;
+        z-index: 50;
+        position: relative;
+        float: left;
+        display: block;
+        text-align: center;
+        background-color: rgba(0,0,0,.8);
+    }
+
+    #Z_hover {
+        width: 100%;
+        height: auto;
+        left: 0%;
+        z-index: 50;
+        position: relative;
+        float: left;
+        display: block;
+        text-align: center;
+        background-color: rgba(0,0,0,.8);
+    }
+
+    /*Five*/
+    #ready {
+        font-size: 200%;
+        padding: 10px;
+        height: auto;
+        display: block;
+        margin-top: 33px;
+        color: white;
+        width: auto;
+        text-align: center;
+    }
+
+    #five_content {
+        margin-left: 0%;
+        width: 100%;
+        height: 125px;
+        display: block;
+        float: left;
+        text-align: center;
+        background-color: #FF7A7A;
+        position: relative;
+        display: block;
+    }
+    
+    #signup {
+        width: 100%;
+        height: auto;
+        color: white;
+        background-color: #2A272B;
+        text-align: center;
+        position: relative;
+        display: block;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    #five_bg {
+        position: relative;
+        display: block;
+        z-index: 10;
+    }
+    
+    #five {
+        height: auto;
+        overflow: auto;
+        background-image: none;
+        -webkit-background-size: auto;
+        -moz-background-size: auto;
+        -o-background-size: auto;
+        background-size: auto;
+        background-repeat: auto;
+    }
+    
+    #input_list {
+        list-style-type: none;
+        margin-top: 20px;
+        width: 90%;
+        margin-left: 10%;
+        margin-right: 10%;
+        display: block;
+    }
+    
+    #notify {
+        font-size: 150%;
+        margin: 0;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        height: 75px;
+        display: block;
+        color: white;
+        width: auto;
+        overflow: hidden;
+    }
+    
+    #email_input {
+        padding: 10px;
+        margin: 0;
+        width: 200px;
+        border: solid 1px #dcdcdc;
+        transition: box-shadow 0.3s, border 0.3s;
+        margin-bottom: 20px;
+    }
+    
+    #confirmation_box {
+        height: auto;
+        width: 90%;
+        background-color: white;
+        position: absolute;
+        display: block;
+        margin: 0 auto;
+        border-radius: 10px;
+        top: 5%;
+        left: 5%;
+        text-align: center;
+    }
+    
+    #beta_button {
+        padding-top: 10px;
+        width: 100%;
+        height: auto;
+        color: white;
+        background-color: #2A272B;
+        text-align: center;
+        position: relative;
+        display: block;
+        margin: 0px;
+    }
+    
+    #join_btn {
+        margin-top: 0%;
+        margin-bottom: 10px;
+    }    
+}
