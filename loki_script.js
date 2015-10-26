@@ -39,7 +39,7 @@ function load() {
             $('#map_pin4').fadeOut(1000);
             fade_in = true;
         }
-    }, 4000);
+    }, 3000);
     
     
     $(document).scroll(function() {

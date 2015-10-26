@@ -43,6 +43,42 @@ section {
     background-size: 40px 40px;
 }
 
+#map_pin2 {
+    height: 40px;
+    width: 40px;
+    top: 300px;
+    left: 270px;
+    position: relative;
+    background:url(Assets/dynamic_postview/pin2.png) no-repeat center center;
+    display: none;
+    z-index: 10;
+    background-size: 40px 40px;
+}
+
+#map_pin3 {
+    height: 40px;
+    width: 40px;
+    top: 190px;
+    left: 150px;
+    position: relative;
+    background:url(Assets/dynamic_postview/pin3.png) no-repeat center center;
+    display: none;
+    z-index: 10;
+    background-size: 40px 40px;
+}
+
+#map_pin4 {
+    height: 40px;
+    width: 40px;
+    top: 100px;
+    left: 250px;
+    position: relative;
+    background:url(Assets/dynamic_postview/pin4.png) no-repeat center center;
+    display: none;
+    z-index: 10;
+    background-size: 40px 40px;
+}
+
 #banner {
     position: relative;
     color: white;
@@ -121,7 +157,7 @@ input[type="text"]:focus {
 }
 
 #iphone {
-    margin-top: 3%;
+    margin-top: 1%;
 	height: 97%;
 	float: left;
     position: relative;
@@ -1213,6 +1249,22 @@ input[type="text"]:focus {
         margin-bottom: 10px;
     }
     
+    #map_pin1 {
+        left: 43%;
+    }
+    
+    #map_pin2 {
+        left: 48%;
+        top: 20%;
+    }
+    
+    #map_pin3 {
+        left: 52%;
+    }
+    
+    #map_pin4 {
+        left: 50%;
+    }
 
 }
 
@@ -1584,41 +1636,21 @@ input[type="text"]:focus {
         margin-bottom: 10px;
     }    
     
+    #map_pin1 {
+        left: 43%;
+    }
+    
+    #map_pin2 {
+        left: 48%;
+        top: 20%;
+    }
+    
+    #map_pin3 {
+        left: 52%;
+    }
+    
+    #map_pin4 {
+        left: 50%;  
+    }
 
-}
-
-#map_pin2 {
-    height: 40px;
-    width: 40px;
-    top: 300px;
-    left: 270px;
-    position: relative;
-    background:url(Assets/dynamic_postview/pin2.png) no-repeat center center;
-    display: none;
-    z-index: 10;
-    background-size: 40px 40px;
-}
-
-#map_pin3 {
-    height: 40px;
-    width: 40px;
-    top: 190px;
-    left: 150px;
-    position: relative;
-    background:url(Assets/dynamic_postview/pin3.png) no-repeat center center;
-    display: none;
-    z-index: 10;
-    background-size: 40px 40px;
-}
-
-#map_pin4 {
-    height: 40px;
-    width: 40px;
-    top: 100px;
-    left: 250px;
-    position: relative;
-    background:url(Assets/dynamic_postview/pin4.png) no-repeat center center;
-    display: none;
-    z-index: 10;
-    background-size: 40px 40px;
 }
