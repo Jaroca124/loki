@@ -35,7 +35,14 @@ section {
 }
 
 #overlay1 {
-	background-color: rgba(0, 0, 0, .65);
+	background: rgba(255,122,122,1);
+    background: -moz-linear-gradient(-45deg, rgba(255,122,122,1) 0%, rgba(209,15,60,0.65) 50%, rgba(255,122,122,0.3) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(255,122,122,1)), color-stop(50%, rgba(209,15,60,0.65)), color-stop(100%, rgba(255,122,122,0.3)));
+    background: -webkit-linear-gradient(-45deg, rgba(255,122,122,1) 0%, rgba(209,15,60,0.65) 50%, rgba(255,122,122,0.3) 100%);
+    background: -o-linear-gradient(-45deg, rgba(255,122,122,1) 0%, rgba(209,15,60,0.65) 50%, rgba(255,122,122,0.3) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(255,122,122,1) 0%, rgba(209,15,60,0.65) 50%, rgba(255,122,122,0.3) 100%);
+    background: linear-gradient(135deg, rgba(255,122,122,1) 0%, rgba(209,15,60,0.65) 50%, rgba(255,122,122,0.3) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7a7a', endColorstr='#ff7a7a', GradientType=1 );
 	position: absolute;
 	height: 100%;
 	width: 100%;
@@ -853,8 +860,8 @@ input[type="text"]:focus {
     background-repeat: no-repeat;
     display: block;
     z-index: 5;
-    height: 300px;
-    width: 300px;
+    height: 200px;
+    width: 200px;
     top: 20%;/*150px;*/
     left: 20%;/*200px;*/
     position: absolute;
