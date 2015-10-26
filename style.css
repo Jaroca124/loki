@@ -22,6 +22,27 @@ section {
     display: none;
 }
 
+#pin_position {
+    height: 200px;
+    width: 200px;
+    position: relative;
+    display: block;
+    z-index: 5;
+    margin: 0 auto;
+}
+
+#map_pin1 {
+    height: 40px;
+    width: 40px;
+    top: 200px;
+    left: 200px;
+    position: relative;
+    background:url(Assets/dynamic_postview/pin1.png) no-repeat center center;
+    display: none;
+    z-index: 10;
+    background-size: 40px 40px;
+}
+
 #banner {
     position: relative;
     color: white;
@@ -104,11 +125,12 @@ input[type="text"]:focus {
 	height: 97%;
 	float: left;
     position: relative;
-    background:url(images/loki_map.png) no-repeat center center;
+    background:url(Assets/dynamic_postview/post_view_phone.png) no-repeat center center;
     display: none;
     background-size: 279px 530px;
     left: 8%;
     width: 35%;
+    z-index: 5;
 }
 
 
@@ -1565,11 +1587,38 @@ input[type="text"]:focus {
 
 }
 
-#pin_position {
-    height: 200px;
-    width: 200px;
+#map_pin2 {
+    height: 40px;
+    width: 40px;
+    top: 300px;
+    left: 270px;
     position: relative;
-    display: block;
-    z-index: 5;
-    margin: 0 auto;
+    background:url(Assets/dynamic_postview/pin2.png) no-repeat center center;
+    display: none;
+    z-index: 10;
+    background-size: 40px 40px;
+}
+
+#map_pin3 {
+    height: 40px;
+    width: 40px;
+    top: 190px;
+    left: 150px;
+    position: relative;
+    background:url(Assets/dynamic_postview/pin3.png) no-repeat center center;
+    display: none;
+    z-index: 10;
+    background-size: 40px 40px;
+}
+
+#map_pin4 {
+    height: 40px;
+    width: 40px;
+    top: 100px;
+    left: 250px;
+    position: relative;
+    background:url(Assets/dynamic_postview/pin4.png) no-repeat center center;
+    display: none;
+    z-index: 10;
+    background-size: 40px 40px;
 }

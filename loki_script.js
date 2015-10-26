@@ -22,21 +22,32 @@ function load() {
         }
     });
     
+    // Dynamic Pins
+    var fade_in = true;
+    setInterval(function() {
+        if (fade_in) {
+            $('#map_pin1').fadeIn(1000);
+            $('#map_pin2').delay(500).fadeIn(1000);
+            $('#map_pin3').delay(1000).fadeIn(1000);
+            $('#map_pin4').delay(1500).fadeIn(1000);
+            fade_in = false;
+        }
+        else {
+            $('#map_pin1').fadeOut(1000);
+            $('#map_pin2').fadeOut(1000);
+            $('#map_pin3').fadeOut(1000);
+            $('#map_pin4').fadeOut(1000);
+            fade_in = true;
+        }
+    }, 4000);
+    
+    
     $(document).scroll(function() {
         var y = $(this).scrollTop() + 100;
         if (y >= $('#three').height()) {
             $('#pp_image').delay(500).slideDown();
         }
     });
-
-    /*
-    //Section Three Animation
-    $(document).scroll(function() {
-        var y = $(this).scrollTop();
-        if (y >= $('#three').height()) {
-            $('#three_content').fadeIn(3000);
-        }
-    });*/
 
     //Arrow Action
     $('.goto-next').click(function(event) {
