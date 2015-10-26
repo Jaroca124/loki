@@ -110,7 +110,7 @@ input[type="text"]:focus {
 	height: 97%;
 	float: left;
     position: relative;
-    background:url(images/loki_map.png) no-repeat center center;
+    background:url(Assets/dynamic_postview/post_view_phone.png) no-repeat center center;
     display: none;
     background-size: 279px 530px;
     left: 8%;
