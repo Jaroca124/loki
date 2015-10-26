@@ -43,32 +43,7 @@ section {
 	display: none;
 }
 
-.style-1 input[type="text"] {
-  padding: 10px;
-  margin: 0;
-  width: 200px;
-  border: solid 1px #dcdcdc;
-  transition: box-shadow 0.3s, border 0.3s;
-}
-.style-1 input[type="text"]:focus,
-.style-1 input[type="text"].focus {
-  border: solid 1px #707070;
-  box-shadow: 0 0 5px 1px #969696;
-}
 
-input[type="text"] {
-  display: block;
-  margin: 0;
-  width: 100%;
-  font-family: sans-serif;
-  font-size: 18px;
-  appearance: none;
-  box-shadow: none;
-  border-radius: none;
-}
-input[type="text"]:focus {
-  outline: none;
-}
 
 #overlay3 {
 	background-color: rgba(255, 122, 122, 0.30);
@@ -174,18 +149,22 @@ input[type="text"]:focus {
 }
 
 .btn {
-  -webkit-border-radius: 10;
-  -moz-border-radius: 10;
-  border-radius: 10px;
-  font-family: Arial;
+  background: #ed9107;
+  background-image: -webkit-linear-gradient(top, #ed9107, #bd6e0d);
+  background-image: -moz-linear-gradient(top, #ed9107, #bd6e0d);
+  background-image: -ms-linear-gradient(top, #ed9107, #bd6e0d);
+  background-image: -o-linear-gradient(top, #ed9107, #bd6e0d);
+  background-image: linear-gradient(to bottom, #ed9107, #bd6e0d);
+  -webkit-border-radius: 3;
+  -moz-border-radius: 3;
+  border-radius: 3px;
   color: #ffffff;
   font-size: 20px;
-  background: #FF7A7A;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
-  margin-bottom: 40px;
-  display: block;
-  margin: 0 auto;
+  border: none;
+  display: inline-block;
+  margin-right: 20px;
 }
 
 .btn:hover {
@@ -214,10 +193,24 @@ input[type="text"]:focus {
 	float: left;
 	margin-left: 60px;
     margin-top: 5px;
-    height: 47px;
-    width: 80px;
+    height: 50px;
+    width: 85px;
 }
 
+#play {
+	height: 50px;
+	width: 50px;
+	display: inline-block;
+	top: 500px;
+}
+
+#envoy_vid {
+	display: inline-block;
+	width: 310px;
+	padding: 0px;
+	margin: 0px;
+	height: 50px;
+}
 #one_text {
     float: left;
     width: 50%;
@@ -381,15 +374,15 @@ input[type="text"]:focus {
 }
 
 #four {
-    /*background-image: url(Assets/bg5.JPG);
+    background-image: url(Assets/bg5.JPG);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-repeat: no-repeat;*/
+    background-repeat: no-repeat;
     position: relative;
     color: white;
-    /*z-index: 0;*/
+    z-index: 0;
 }
 
 #four_header {
@@ -443,8 +436,7 @@ input[type="text"]:focus {
     height: auto;
     width: 100%;
     display: block;
-    background-color: #6B6B6B;
-    overflow: hidden;
+    background-color: #5E5E5E;
 }
 
 #text_upper_four {
@@ -458,7 +450,6 @@ input[type="text"]:focus {
     text-align: center;
     display: block;
     position: absolute;
-    z-index: 5;
 }
 
 .reposition {
@@ -470,12 +461,8 @@ input[type="text"]:focus {
 }
 
 #email_input {
-    padding: 10px;
-    margin: 0;
-    width: 200px;
-    border: solid 1px #dcdcdc;
-    transition: box-shadow 0.3s, border 0.3s;
-    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .icons {
@@ -543,7 +530,7 @@ input[type="text"]:focus {
 }
 
 #section_one {
-    display: block;
+    display: none;
 }
 
 #profile_pic {
@@ -627,7 +614,7 @@ input[type="text"]:focus {
 }
 
 #two_content {
-    height: 20%;
+    height: 17%;
     width: 100%;
     text-align: center;
     display: block;
@@ -705,161 +692,6 @@ input[type="text"]:focus {
     float: left;
 }
 
-#signup {
-    width: auto;
-    height: auto;
-    padding: 10px;
-    color: white;
-    margin-top: 130px;
-    right: 0px;
-    background-color: rgba(0, 0, 0, .8);
-    text-align: center;
-    display: block;
-    position: absolute;
-}
-
-#notify {
-    font-size: 200%;
-    padding-bottom: 0px;
-    height: auto;
-    display: block;
-    color: white;
-    width: auto;
-    overflow: hidden;
-}
-
-#five_bg {
-    background-image: url(Assets/BG4_Edit.png);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 500px;
-    display: none;
-    position: relative;
-    background-position: center;
-    color: white;
-    margin: 0px;
-}
-
-#input_list {
-    list-style-type: none;
-    margin-top: 20px;
-    width: 90%;
-    margin-left: 10%;
-    margin-right: 10%;
-    display: block;
-}
-
-#confirmation_box {
-    height: auto;
-    width: 90%;
-    background-color: white;
-    position: absolute;
-    display: block;
-    margin: 0 auto;
-    border-radius: 10px;
-    top: 20%;
-    left: 5%;
-    text-align: center;
-}
-
-#confirmation_banner {
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, .75);
-    position: fixed;
-    display: none;
-    margin: 0 auto;
-    z-index: 120;
-}
-
-.congrats_text {
-    padding: 10px;
-    color: #FF7A7A;
-}
-
-#congrats_button {
-  -webkit-border-radius: 10;
-  -moz-border-radius: 10;
-  border-radius: 10px;
-  font-family: Arial;
-  color: #ffffff;
-  font-size: 20px;
-  background: #FF7A7A;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;
-  margin: 0 auto 20px;
-  display: block;
-}
-
-#congrats_button:hover {
-  background: #3cb0fd;
-  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
-  text-decoration: none;
-}
-#permission {
-    display: block;
-    width: auto;
-    text-align: center;
-    font-size: 5px;
-    color: white;    
-}
-
-#mc_signup_form {
-    width: 100%;
-    z-index: 10;
-    background-color: red;
-    overflow: hidden;
-    
-}
-
-#dyn_bg {
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    /*z-index: 0;*/
-}
-
-#beta_button {
-    display: block;
-    z-index: 50;
-    float: right;
-    height: 100%;
-    width: 30%;
-    margin-right: 5%;
-}
-
-#join_btn {
-    margin-top: 63%;
-}
-
-#pin_view {
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: block;
-    z-index: 5;
-    height: 300px;
-    width: 300px;
-    top: 20%;/*150px;*/
-    left: 20%;/*200px;*/
-    position: absolute;
-}
-
 
 /*iPhone 5 - 320*/
 @media only screen and (min-width: 0px) and (max-width: 1140px) {
@@ -868,13 +700,14 @@ input[type="text"]:focus {
         float: left;
         margin-left: 60px;
         margin-top: 5px;
-        height: 47px;
-        width: 80px;
+        height: 50px;
+        width: 85px;
     }
     
     #banner {
-	    height: 720px;
+	    height: 500px;
         display: block;
+        width: 100%;
         background-position: 0%;
     }
     
@@ -968,7 +801,6 @@ input[type="text"]:focus {
         display: block;
         margin-top: 10px;
         text-align: center;
-        padding: 0px;
     }
     
     #overlay3 {
@@ -983,9 +815,9 @@ input[type="text"]:focus {
     
     #text_upper_four {
         width: 100%;
-        height: 100%;
+        height: auto;
         bottom: 0%;
-        padding: 0px;
+        padding: 10px;
         color: white;
         background-color: rgba(0, 0, 0, .5);
         text-align: center;
@@ -996,7 +828,7 @@ input[type="text"]:focus {
         width: 100%;
         text-align: center;
         height: 20px;
-        color: white;
+        color: black;
         padding-top: 12px;
         margin-top: 10px;
         margin-bottom: 5px;
@@ -1035,7 +867,6 @@ input[type="text"]:focus {
         width: 30%;
         float: right;
         margin: 10%;
-        margin-top: 50px;
         display: block;
     }
 
@@ -1044,7 +875,6 @@ input[type="text"]:focus {
         width: 30%;
         float: left;
         margin: 10%;
-        margin-top: 50px;
         display: block;
     }
     
@@ -1102,107 +932,14 @@ input[type="text"]:focus {
         float: left;
         text-align: center;
         background-color: #FF7A7A;
-        display: block;
-        position: relative;
     }
-    
-    #signup {
-        width: 100%;
-        height: auto;
-        color: white;
-        background-color: #2A272B;
-        text-align: center;
-        position: relative;
-        display: block;
-        margin: 0px;
-        padding: 0px;
-    }
-    
-    #five_bg {
-        position: relative;
-        display: block;
-    }
-    
-    #five {
-        height: auto;
-        overflow: auto;
-        background-image: none;
-        -webkit-background-size: auto;
-        -moz-background-size: auto;
-        -o-background-size: auto;
-        background-size: auto;
-        background-repeat: auto;
-    }
-    
-    #section_one {
-        display: none;
-    }
-    
-    #input_list {
-        list-style-type: none;
-        margin-top: 20px;
-        width: 100%;
-        display: block;
-    }
-    
-    #notify {
-        font-size: 150%;
-        margin: 0;
-        padding-top: 20px;    
-        padding-bottom: 10px;
-        height: 75px;
-        display: block;
-        color: white;
-        width: auto;
-        overflow: hidden;
-    }
-    
-    #confirmation_box {
-        height: auto;
-        width: 90%;
-        background-color: white;
-        position: absolute;
-        display: block;
-        margin: 0 auto;
-        border-radius: 10px;
-        top: 5%;
-        left: 5%;
-        text-align: center;
-    }
-    
-    #six {
-        height: auto;
-        overflow: auto;
-    }
-    
-    #beta_button {
-        width: 100%;
-        height: auto;
-        color: white;
-        background-color: #2A272B;
-        text-align: center;
-        position: relative;
-        display: block;
-        margin: 0px;
-        padding-top: 10px;
-    }
-    
-    #join_btn {
-        margin-top: 0%;
-        margin-bottom: 10px;
-    }
-    
-
 }
 
 @media only screen and (min-height: 0px) and (max-height: 560px)  {
-    #section_one {
-        display: none;
-    }
-    
     #banner {
-	    height: 720px;
+	    height: 500px;
         display: block;
+        width: 100%;
         background-position: 0%;
     }
     
@@ -1263,15 +1000,6 @@ input[type="text"]:focus {
         text-align: center;
     }
     
-    #logo_text {
-        display: inline-block;
-        float: left;
-        margin-left: 60px;
-        margin-top: 5px;
-        height: 47px;
-        width: 80px;
-    }
-    
     #iphone {
 	    width: 100%;
 	    height: 500px;
@@ -1303,8 +1031,6 @@ input[type="text"]:focus {
         display: block;
         margin-top: 10px;
         text-align: center;
-        padding: 0px;
-        padding-bottom: 10px;
     }
     
     #iphone2 {
@@ -1339,9 +1065,9 @@ input[type="text"]:focus {
     
     #text_upper_four {
         width: 100%;
-        height: 100%;
+        height: auto;
         bottom: 0%;
-        padding: 0px;
+        padding: 10px;
         color: white;
         background-color: rgba(0, 0, 0, .5);
         text-align: center;
@@ -1352,12 +1078,7 @@ input[type="text"]:focus {
     }
     
     #email_input {
-        padding: 10px;
-        margin: 0;
-        width: 200px;
-        border: solid 1px #dcdcdc;
-        transition: box-shadow 0.3s, border 0.3s;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
     
     #copyright {
@@ -1403,7 +1124,7 @@ input[type="text"]:focus {
         width: 30%;
         float: right;
         margin: 10%;
-        margin-top: 50px;
+        margin-top: auto;
         display: block;
     }
 
@@ -1412,7 +1133,7 @@ input[type="text"]:focus {
         width: 30%;
         float: left;
         margin: 10%;
-        margin-top: 50px;
+        margin-top: auto;
         display: block;
     }
     
@@ -1470,98 +1191,5 @@ input[type="text"]:focus {
         float: left;
         text-align: center;
         background-color: #FF7A7A;
-        position: relative;
-        display: block;
     }
-    
-    #signup {
-        width: 100%;
-        height: auto;
-        color: white;
-        background-color: #2A272B;
-        text-align: center;
-        position: relative;
-        display: block;
-        margin: 0px;
-        padding: 0px;
-    }
-    
-    #five_bg {
-        position: relative;
-        display: block;
-        z-index: 10;
-    }
-    
-    #five {
-        height: auto;
-        overflow: auto;
-        background-image: none;
-        -webkit-background-size: auto;
-        -moz-background-size: auto;
-        -o-background-size: auto;
-        background-size: auto;
-        background-repeat: auto;
-    }
-    
-    #input_list {
-        list-style-type: none;
-        margin-top: 20px;
-        width: 90%;
-        margin-left: 10%;
-        margin-right: 10%;
-        display: block;
-    }
-    
-    #notify {
-        font-size: 150%;
-        margin: 0;
-        padding-top: 20px;
-        padding-bottom: 10px;
-        height: 75px;
-        display: block;
-        color: white;
-        width: auto;
-        overflow: hidden;
-    }
-    
-    #email_input {
-        padding: 10px;
-        margin: 0;
-        width: 200px;
-        border: solid 1px #dcdcdc;
-        transition: box-shadow 0.3s, border 0.3s;
-        margin-bottom: 20px;
-    }
-    
-    #confirmation_box {
-        height: auto;
-        width: 90%;
-        background-color: white;
-        position: absolute;
-        display: block;
-        margin: 0 auto;
-        border-radius: 10px;
-        top: 5%;
-        left: 5%;
-        text-align: center;
-    }
-    
-    #beta_button {
-        padding-top: 10px;
-        width: 100%;
-        height: auto;
-        color: white;
-        background-color: #2A272B;
-        text-align: center;
-        position: relative;
-        display: block;
-        margin: 0px;
-    }
-    
-    #join_btn {
-        margin-top: 0%;
-        margin-bottom: 10px;
-    }    
-    
-
 }

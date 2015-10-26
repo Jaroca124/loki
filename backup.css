@@ -845,21 +845,6 @@ input[type="text"]:focus {
     margin-top: 63%;
 }
 
-#pin_view {
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: block;
-    z-index: 5;
-    height: 300px;
-    width: 300px;
-    top: 20%;/*150px;*/
-    left: 20%;/*200px;*/
-    position: absolute;
-}
-
 
 /*iPhone 5 - 320*/
 @media only screen and (min-width: 0px) and (max-width: 1140px) {
@@ -1191,8 +1176,6 @@ input[type="text"]:focus {
         margin-top: 0%;
         margin-bottom: 10px;
     }
-    
-
 }
 
 @media only screen and (min-height: 0px) and (max-height: 560px)  {
@@ -1562,6 +1545,4 @@ input[type="text"]:focus {
         margin-top: 0%;
         margin-bottom: 10px;
     }    
-    
-
 }
