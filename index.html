@@ -10,17 +10,43 @@
         <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
         <script type="text/javascript" src="jquery.searchabledropdown-1.0.8.min.js"></script>
         <link rel="icon" type="image/png" sizes="96x96" href="Assets/favicon-96x96.png">
+        <link rel="stylesheet" href="assets/css/main.css" />
         <script type="text/javascript" src="loki_script.js"></script>
     </head>
     
     <!--<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us11.list-manage.com","uuid":"a08e871c9a71d9e4aceac3224","lid":"f91f8eea81"}) })</script>-->
+    <script>
+        window.onload = function() { document.body.className = ''; }
+        window.ontouchmove = function() { return false; }
+        window.onorientationchange = function() { document.body.scrollTop = 0; }
+    </script>
     
     <body onload='load()'>
         <!--Header-->
-        <div id='header'><img id='logo' src="Assets/Loki_Logo.png"><img src='Assets/Loki_Text.png' id='logo_text'><!--<a id='apple_badge'                                 href=''><img src='images/Download_on_the_App_Store_Badge_US-UK_135x40.svg'></a>--></div>
+        <!--<div id='header'><img id='logo' src="Assets/Loki_Logo.png"><img src='Assets/Loki_Text.png' id='logo_text'><a id='apple_badge'                                 href=''><img src='images/Download_on_the_App_Store_Badge_US-UK_135x40.svg'></a></div>-->
         
         <!-- Banner -->
-            <section id="banner">
+            <section id="banner" class='loading'>
+                <div id="wrapper">
+                <div id="bg"></div>
+                <div id="overlay"></div>
+                <div id="main">
+                    <!-- Header -->
+                        <header id="header">
+                            <img src="assets/css/images/Loki_Logo.png" width=12%>
+                            <img src="assets/css/images/Loki_Text.png" width=20%>
+                            <p>The next social network &#8226; Coming to the App Store Winter 2015</p>
+                            <nav>
+                                <ul>
+                                    <li><a id='banner_links' href="https://www.Instagram.com/lokinetwork" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                                    <li><a id='banner_links' href="https://www.Twitter.com/thelokinetwork" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                                    <li><a id='banner_links' href="https://www.Facebook.com/thelokinetwork" class="icon fa-instagram"><span class="label">Facebook</span></a></li>
+                                    <li><a id='banner_links' href="mailto:ZachKhan@theimpulsiveapps.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+                                </ul>
+                            </nav>
+                        </header>
+                </div>
+                <!--
                 <div id='dyn_bg'></div>
                 <div id='overlay1'>
                     <div id='banner_text'>
@@ -31,7 +57,7 @@
                         </div>
                     </div>
                     <div class="goto-next" id='section_one'></div>
-                </div>
+                </div>-->
             </section>
 
             <!-- One -->
@@ -96,7 +122,7 @@
             </section>
             
             <!-- Footer -->
-                <footer id="footer">
+                <footer id="footer_links">
                     <div id="social_links">
                         <a href="https://twitter.com/TheLokiNetwork" class="icons"><img src="images/64-twitter.png" alt="Twitter"></a>
                         <a href="https://www.facebook.com/TheLokiNetwork" class="icons"><img src="images/64-facebook.png" alt="Facebook"></a>

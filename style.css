@@ -10,7 +10,7 @@ section {
 	height: 100vh;
 }
 
-
+/*
 #header {
 	height: 60px;
 	background-color: #FF7A7A;
@@ -20,7 +20,7 @@ section {
 	width: 100%;
 	z-index: 100;
     display: none;
-}
+}*/
 
 #pin_position {
     height: 200px;
@@ -79,11 +79,12 @@ section {
     background-size: 40px 40px;
 }
 
+/*
 #banner {
     position: relative;
     color: white;
     z-index: 0;
-}
+}*/
 
 #overlay1 {
     background: rgba(255,122,122,1);
@@ -493,11 +494,7 @@ input[type="text"]:focus {
     margin: 0 auto;
 }
 
-<div class="arrow-down"> {
-    
-}
-
-#footer {
+#footer_links {
     margin: 0;
     height: auto;
     width: 100%;
